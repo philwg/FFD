@@ -1,0 +1,30 @@
+Ce programme présente une implémentation des déformations globales
+basée sur les courbes de Bézier.
+
+J'ai développé cette application avec la bibliothèque Armadillo qui
+m'a facilité la tâche avec la matrice de covariance, les vecteurs
+propres et autres produits scalaires. Je fournis un makefile adapté.
+Toutefois, sous linux, il faut s'assurer d'avoir les dépendances
+d'Armadillo : Lapack et Blas (pour le calcul des vecteurs propres).
+
+Les contrôles sont limités et intuitifs :
+
+	le clic gauche : 		Saisir un nouveau Point dans la fenêtre
+
+	le clic droit : 		Selectionner un Point par Picking 
+							(dans tous les modes)
+
+	clic-droit maintenu : 	permet de déplacer le Point selectionné
+							(dans tous les modes)
+
+	'o' :			Bascule Monde/Objet pour l'orientation de la BBox
+
+	'g'	: 			Bascule entre mode saisie et mode "Gelée"
+	
+	'u' & 'U' :		Modifier le degré en U (Première direction de la BBox)
+
+	'v' & 'V' : 	Modifier le degré en V (seconde direction de la BBox)
+	
+	'c' :			En mode "Gelée", permet de courber aussi les segments
+
+	'q'	: 			Quitter l'application.
